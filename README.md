@@ -1,4 +1,4 @@
-# 📝 Prompt Title: Airline Reservation System in C++ with User Login, Flight Management, and Seat Booking
+# 📝 Airline Reservation System in C++ with User Login, Flight Management, and Seat Booking
 
 Prompt:
 
