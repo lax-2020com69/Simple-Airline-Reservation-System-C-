@@ -1,5 +1,105 @@
 # 📝 Airline Reservation System in C++ with User Login, Flight Management, and Seat Booking
 
+# 🧰 Requirements
+A C++ compiler (e.g., g++)
+
+A terminal or command prompt
+
+Basic text files:
+
+users.txt (for user login credentials)
+
+flight.txt (for flight data)
+
+seat.txt (for seat status data)
+
+# ✅ Step-by-Step Instructions
+# 🖥️ Option 1: Using a Local Machine
+# 🔧 Step 1: Create the Files
+Save the C++ code to a file named:
+airline.cpp
+
+Create the following plain text files in the same folder:
+
+flight.txt (sample content):
+
+AI101 10
+AI202 8
+seat.txt (sample content matching above flights):
+
+AI101 0 0 0 0 0 0 0 0 0 0
+AI202 0 0 0 0 0 0 0 0
+(No need to create users.txt now—this file will be generated when a user registers.)
+
+# ⚙️ Step 2: Compile the Program
+Linux/macOS (Terminal):
+
+g++ airline.cpp -o airline
+./airline
+Windows (Command Prompt or PowerShell):
+
+g++ airline.cpp -o airline.exe
+airline.exe
+If you don’t have g++, install it via:
+
+Linux: sudo apt install g++
+
+macOS: brew install gcc
+
+Windows: Install MinGW or use MSYS2
+
+# 🎮 Step 3: Use the Program
+On first run, choose:
+
+1 to register
+
+2 to login
+
+After logging in:
+
+View the list of flights
+
+Select a flight to:
+
+View seat availability
+
+Book a seat
+
+Cancel a seat
+
+Return to the main flight list
+
+# 🌐 Option 2: Using an Online Compiler
+Use one of the following:
+
+https://www.onlinegdb.com/
+
+https://www.programiz.com/cpp-programming/online-compiler/
+
+https://replit.com/
+
+Instructions:
+
+Paste the full code into the editor.
+
+Create simulated text file behavior:
+
+Online compilers may not support real file I/O, so you'd need to:
+
+Replace file input/output with cin/cout simulation, or
+
+Use a platform like Replit, which supports file editing.
+
+Click Run.
+
+# 💡 Notes
+All file data is plain text, so you can edit flight.txt and seat.txt easily.
+
+Data persists across runs as long as the .txt files are not deleted.
+
+Seat numbers are 1-based (from 1 to number of seats).
+
+
 Create a C++ console-based Airline Reservation System with the following features:
 
 # 🔐 1. User Authentication
