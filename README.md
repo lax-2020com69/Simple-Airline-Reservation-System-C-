@@ -85,8 +85,3 @@ Book seats
 Cancel bookings
 
 Go back to the main menu
-
-Use Case:
-This prompt is ideal for students learning object-oriented programming in C++,
-especially those looking to understand file handling, user authentication,
-and interactive command-line applications.
