@@ -1,0 +1,92 @@
+#📝 Prompt Title: Airline Reservation System in C++ with User Login, Flight Management, and Seat Booking
+
+Prompt:
+
+Create a C++ console-based Airline Reservation System with the following features:
+
+#🔐 1. User Authentication
+Login and Registration System:
+
+Users can register with a username and password, stored in a users.txt file.
+
+During login, credentials are verified against the file.
+
+Displays appropriate messages for successful login or invalid credentials.
+
+#✈️ 2. Flight Management
+Each flight is represented by a Flight object containing:
+
+A flight number (e.g., AI101)
+
+A list of seats (default: 10 seats)
+
+Flight metadata is loaded from a flight.txt file with each line in the format:
+
+AI101 10
+AI202 12
+Seat availability is maintained in a separate seat.txt file:
+
+Each line corresponds to a flight and its seat status:
+
+AI101 0 0 1 0 1 0 0 1 0 0
+
+#🪑 3. Seat Booking and Cancellation
+Display seat status: Shows booked or available for each seat.
+
+Book a seat:
+
+Prompts user for a seat number.
+
+Validates the seat is within range and not already booked.
+
+Updates the seat.txt file.
+
+Cancel a booking:
+
+Prompts for the seat number to cancel.
+
+Checks if it's currently booked before proceeding.
+
+Saves updated seat data.
+
+#🗂️ 4. File I/O Operations
+Reads and writes to users.txt, flight.txt, and seat.txt.
+
+Uses file streams to persist data across sessions.
+
+Uses stringstream for parsing lines.
+
+#🧾 5. Modular Design
+Implements two main classes:
+
+User: Handles authentication logic.
+
+Flight: Handles flight seat operations, display, loading, and saving.
+
+Uses vector containers for dynamic seat storage.
+
+Handles multiple flights and allows selection via the menu.
+
+#🖥️ 6. User Interaction via Console
+Displays a main menu to:
+
+Register or login.
+
+View available flights.
+
+Interact with a selected flight.
+
+Offers a flight-specific menu to:
+
+View seats
+
+Book seats
+
+Cancel bookings
+
+Go back to the main menu
+
+Use Case:
+This prompt is ideal for students learning object-oriented programming in C++,
+especially those looking to understand file handling, user authentication,
+and interactive command-line applications.
